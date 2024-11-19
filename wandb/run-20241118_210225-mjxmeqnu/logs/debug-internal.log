@@ -1,0 +1,203 @@
+2024-11-18 21:02:25,500 INFO    StreamThr :169234 [internal.py:wandb_internal():85] W&B internal server running at pid: 169234, started at: 2024-11-18 21:02:25.500101
+2024-11-18 21:02:25,502 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: status
+2024-11-18 21:02:25,504 INFO    WriterThread:169234 [datastore.py:open_for_write():87] open: /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/run-mjxmeqnu.wandb
+2024-11-18 21:02:25,505 DEBUG   SenderThread:169234 [sender.py:send():379] send: header
+2024-11-18 21:02:25,540 DEBUG   SenderThread:169234 [sender.py:send():379] send: run
+2024-11-18 21:02:25,792 INFO    SenderThread:169234 [dir_watcher.py:__init__():211] watching files in: /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files
+2024-11-18 21:02:25,792 INFO    SenderThread:169234 [sender.py:_start_run_threads():1188] run started: mjxmeqnu with start time 1731963745.4999
+2024-11-18 21:02:25,798 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: check_version
+2024-11-18 21:02:25,799 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: check_version
+2024-11-18 21:02:25,870 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: run_start
+2024-11-18 21:02:25,878 DEBUG   HandlerThread:169234 [system_info.py:__init__():26] System info init
+2024-11-18 21:02:25,879 DEBUG   HandlerThread:169234 [system_info.py:__init__():41] System info init done
+2024-11-18 21:02:25,879 INFO    HandlerThread:169234 [system_monitor.py:start():194] Starting system monitor
+2024-11-18 21:02:25,879 INFO    SystemMonitor:169234 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-11-18 21:02:25,879 INFO    HandlerThread:169234 [system_monitor.py:probe():214] Collecting system info
+2024-11-18 21:02:25,880 INFO    SystemMonitor:169234 [interfaces.py:start():188] Started cpu monitoring
+2024-11-18 21:02:25,880 INFO    SystemMonitor:169234 [interfaces.py:start():188] Started disk monitoring
+2024-11-18 21:02:25,881 INFO    SystemMonitor:169234 [interfaces.py:start():188] Started gpu monitoring
+2024-11-18 21:02:25,882 INFO    SystemMonitor:169234 [interfaces.py:start():188] Started memory monitoring
+2024-11-18 21:02:25,883 INFO    SystemMonitor:169234 [interfaces.py:start():188] Started network monitoring
+2024-11-18 21:02:25,915 DEBUG   HandlerThread:169234 [system_info.py:probe():152] Probing system
+2024-11-18 21:02:25,916 DEBUG   HandlerThread:169234 [system_info.py:_probe_git():137] Probing git
+2024-11-18 21:02:25,932 DEBUG   HandlerThread:169234 [system_info.py:_probe_git():145] Probing git done
+2024-11-18 21:02:25,933 DEBUG   HandlerThread:169234 [system_info.py:probe():200] Probing system done
+2024-11-18 21:02:25,933 DEBUG   HandlerThread:169234 [system_monitor.py:probe():223] {'os': 'Linux-6.8.0-1014-azure-x86_64-with-glibc2.17', 'python': '3.8.18', 'heartbeatAt': '2024-11-18T21:02:25.915630', 'startedAt': '2024-11-18T21:02:25.495136', 'docker': None, 'cuda': None, 'args': ('--output_dir', 'output'), 'state': 'running', 'program': 'pretrain.py', 'codePathLocal': 'pretrain.py', 'codePath': 'pretrain.py', 'git': {'remote': 'https://github.com/guyiyangyoung/LLM-DNABERT2.git', 'commit': '38c9413a8f2df2df630001a3e98823338a612094'}, 'email': 'mamingqian@outlook.com', 'root': '/home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2', 'host': 'GCRAZGDL4008', 'username': 'v-mingqianma@microsoft.com', 'executable': '/home/v-mingqianma/miniconda3/envs/caduceus_env/bin/python', 'cpu_count': 96, 'cpu_count_logical': 96, 'cpu_freq': {'current': 2498.3461562499956, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2941.67, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2479.03, 'min': 0.0, 'max': 0.0}, {'current': 3184.644, 'min': 0.0, 'max': 0.0}, {'current': 3091.853, 'min': 0.0, 'max': 0.0}, {'current': 3094.122, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2464.741, 'min': 0.0, 'max': 0.0}, {'current': 3212.257, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2483.06, 'min': 0.0, 'max': 0.0}, {'current': 2885.885, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 3101.906, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}, {'current': 2445.436, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 992.2479553222656, 'used': 591.4921836853027}}, 'gpu': 'NVIDIA A100 80GB PCIe', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}, {'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}, {'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}, {'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}], 'memory': {'total': 866.053539276123}}
+2024-11-18 21:02:25,933 INFO    HandlerThread:169234 [system_monitor.py:probe():224] Finished collecting system info
+2024-11-18 21:02:25,933 INFO    HandlerThread:169234 [system_monitor.py:probe():227] Publishing system info
+2024-11-18 21:02:25,933 DEBUG   HandlerThread:169234 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-11-18 21:02:26,794 INFO    Thread-12 :169234 [dir_watcher.py:_on_file_created():271] file/dir created: /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files/conda-environment.yaml
+2024-11-18 21:02:29,561 DEBUG   HandlerThread:169234 [system_info.py:_save_conda():224] Saving conda packages done
+2024-11-18 21:02:29,562 INFO    HandlerThread:169234 [system_monitor.py:probe():229] Finished publishing system info
+2024-11-18 21:02:29,565 DEBUG   SenderThread:169234 [sender.py:send():379] send: files
+2024-11-18 21:02:29,565 INFO    SenderThread:169234 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-11-18 21:02:29,774 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: python_packages
+2024-11-18 21:02:29,774 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: python_packages
+2024-11-18 21:02:29,775 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-18 21:02:29,775 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: stop_status
+2024-11-18 21:02:29,778 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 21:02:29,794 INFO    Thread-12 :169234 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files/conda-environment.yaml
+2024-11-18 21:02:29,794 INFO    Thread-12 :169234 [dir_watcher.py:_on_file_created():271] file/dir created: /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files/requirements.txt
+2024-11-18 21:02:29,794 INFO    Thread-12 :169234 [dir_watcher.py:_on_file_created():271] file/dir created: /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files/wandb-metadata.json
+2024-11-18 21:02:29,927 DEBUG   SenderThread:169234 [sender.py:send():379] send: telemetry
+2024-11-18 21:02:29,927 DEBUG   SenderThread:169234 [sender.py:send():379] send: config
+2024-11-18 21:02:29,928 DEBUG   SenderThread:169234 [sender.py:send():379] send: telemetry
+2024-11-18 21:02:29,928 DEBUG   SenderThread:169234 [sender.py:send():379] send: metric
+2024-11-18 21:02:29,928 DEBUG   SenderThread:169234 [sender.py:send():379] send: telemetry
+2024-11-18 21:02:29,928 DEBUG   SenderThread:169234 [sender.py:send():379] send: metric
+2024-11-18 21:02:29,928 WARNING SenderThread:169234 [sender.py:send_metric():1405] Seen metric with glob (shouldn't happen)
+2024-11-18 21:02:29,928 DEBUG   SenderThread:169234 [sender.py:send():379] send: telemetry
+2024-11-18 21:02:29,928 DEBUG   SenderThread:169234 [sender.py:send():379] send: telemetry
+2024-11-18 21:02:29,928 DEBUG   SenderThread:169234 [sender.py:send():379] send: config
+2024-11-18 21:02:29,962 INFO    wandb-upload_0:169234 [upload_job.py:push():130] Uploaded file /tmp/tmpewu3g3qewandb/vptlgk1m-wandb-metadata.json
+2024-11-18 21:02:30,776 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 21:02:30,794 INFO    Thread-12 :169234 [dir_watcher.py:_on_file_created():271] file/dir created: /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files/output.log
+2024-11-18 21:02:30,930 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: status_report
+2024-11-18 21:02:31,776 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 21:02:32,795 INFO    Thread-12 :169234 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files/output.log
+2024-11-18 21:02:32,822 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 21:02:33,816 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 21:02:34,598 DEBUG   SenderThread:169234 [sender.py:send():379] send: exit
+2024-11-18 21:02:34,598 INFO    SenderThread:169234 [sender.py:send_exit():586] handling exit code: 1
+2024-11-18 21:02:34,598 INFO    SenderThread:169234 [sender.py:send_exit():588] handling runtime: 8
+2024-11-18 21:02:34,600 INFO    SenderThread:169234 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-18 21:02:34,600 INFO    SenderThread:169234 [sender.py:send_exit():594] send defer
+2024-11-18 21:02:34,600 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 21:02:34,601 INFO    HandlerThread:169234 [handler.py:handle_request_defer():184] handle defer: 0
+2024-11-18 21:02:34,601 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: defer
+2024-11-18 21:02:34,601 INFO    SenderThread:169234 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-11-18 21:02:34,601 INFO    SenderThread:169234 [sender.py:transition_state():614] send defer: 1
+2024-11-18 21:02:34,601 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 21:02:34,601 INFO    HandlerThread:169234 [handler.py:handle_request_defer():184] handle defer: 1
+2024-11-18 21:02:34,601 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: defer
+2024-11-18 21:02:34,601 INFO    SenderThread:169234 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-11-18 21:02:34,601 INFO    SenderThread:169234 [sender.py:transition_state():614] send defer: 2
+2024-11-18 21:02:34,601 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 21:02:34,602 INFO    HandlerThread:169234 [handler.py:handle_request_defer():184] handle defer: 2
+2024-11-18 21:02:34,602 INFO    HandlerThread:169234 [system_monitor.py:finish():203] Stopping system monitor
+2024-11-18 21:02:34,603 DEBUG   SystemMonitor:169234 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-11-18 21:02:34,603 DEBUG   SystemMonitor:169234 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-11-18 21:02:34,603 DEBUG   SystemMonitor:169234 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-11-18 21:02:34,604 INFO    HandlerThread:169234 [interfaces.py:finish():200] Joined cpu monitor
+2024-11-18 21:02:34,604 INFO    HandlerThread:169234 [interfaces.py:finish():200] Joined disk monitor
+2024-11-18 21:02:34,795 INFO    Thread-12 :169234 [dir_watcher.py:_on_file_created():271] file/dir created: /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files/wandb-summary.json
+2024-11-18 21:02:35,101 INFO    HandlerThread:169234 [interfaces.py:finish():200] Joined gpu monitor
+2024-11-18 21:02:35,101 INFO    HandlerThread:169234 [interfaces.py:finish():200] Joined memory monitor
+2024-11-18 21:02:35,101 INFO    HandlerThread:169234 [interfaces.py:finish():200] Joined network monitor
+2024-11-18 21:02:35,102 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: defer
+2024-11-18 21:02:35,102 INFO    SenderThread:169234 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-11-18 21:02:35,102 INFO    SenderThread:169234 [sender.py:transition_state():614] send defer: 3
+2024-11-18 21:02:35,102 DEBUG   SenderThread:169234 [sender.py:send():379] send: stats
+2024-11-18 21:02:35,102 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 21:02:35,103 INFO    HandlerThread:169234 [handler.py:handle_request_defer():184] handle defer: 3
+2024-11-18 21:02:35,103 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: defer
+2024-11-18 21:02:35,103 INFO    SenderThread:169234 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-11-18 21:02:35,103 INFO    SenderThread:169234 [sender.py:transition_state():614] send defer: 4
+2024-11-18 21:02:35,103 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 21:02:35,103 INFO    HandlerThread:169234 [handler.py:handle_request_defer():184] handle defer: 4
+2024-11-18 21:02:35,103 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: defer
+2024-11-18 21:02:35,103 INFO    SenderThread:169234 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-11-18 21:02:35,104 INFO    SenderThread:169234 [sender.py:transition_state():614] send defer: 5
+2024-11-18 21:02:35,104 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 21:02:35,104 INFO    HandlerThread:169234 [handler.py:handle_request_defer():184] handle defer: 5
+2024-11-18 21:02:35,104 DEBUG   SenderThread:169234 [sender.py:send():379] send: summary
+2024-11-18 21:02:35,104 INFO    SenderThread:169234 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-11-18 21:02:35,105 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: defer
+2024-11-18 21:02:35,105 INFO    SenderThread:169234 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-11-18 21:02:35,105 INFO    SenderThread:169234 [sender.py:transition_state():614] send defer: 6
+2024-11-18 21:02:35,105 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 21:02:35,105 INFO    HandlerThread:169234 [handler.py:handle_request_defer():184] handle defer: 6
+2024-11-18 21:02:35,105 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: defer
+2024-11-18 21:02:35,105 INFO    SenderThread:169234 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-11-18 21:02:35,109 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: status_report
+2024-11-18 21:02:35,234 INFO    SenderThread:169234 [sender.py:transition_state():614] send defer: 7
+2024-11-18 21:02:35,234 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 21:02:35,234 INFO    HandlerThread:169234 [handler.py:handle_request_defer():184] handle defer: 7
+2024-11-18 21:02:35,235 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: defer
+2024-11-18 21:02:35,235 INFO    SenderThread:169234 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-11-18 21:02:35,596 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-18 21:02:35,796 INFO    Thread-12 :169234 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files/wandb-summary.json
+2024-11-18 21:02:35,796 INFO    Thread-12 :169234 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files/config.yaml
+2024-11-18 21:02:36,558 INFO    SenderThread:169234 [sender.py:transition_state():614] send defer: 8
+2024-11-18 21:02:36,558 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: poll_exit
+2024-11-18 21:02:36,559 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 21:02:36,559 INFO    HandlerThread:169234 [handler.py:handle_request_defer():184] handle defer: 8
+2024-11-18 21:02:36,559 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: defer
+2024-11-18 21:02:36,559 INFO    SenderThread:169234 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-11-18 21:02:36,559 INFO    SenderThread:169234 [job_builder.py:build():440] Attempting to build job artifact
+2024-11-18 21:02:36,560 INFO    SenderThread:169234 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-11-18 21:02:36,590 INFO    SenderThread:169234 [job_builder.py:build():545] adding wandb-job metadata file
+2024-11-18 21:02:36,597 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-18 21:02:36,608 INFO    SenderThread:169234 [sender.py:transition_state():614] send defer: 9
+2024-11-18 21:02:36,608 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: poll_exit
+2024-11-18 21:02:36,608 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 21:02:36,609 INFO    HandlerThread:169234 [handler.py:handle_request_defer():184] handle defer: 9
+2024-11-18 21:02:36,609 DEBUG   SenderThread:169234 [sender.py:send():379] send: artifact
+2024-11-18 21:02:36,796 INFO    Thread-12 :169234 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files/output.log
+2024-11-18 21:02:37,270 INFO    SenderThread:169234 [sender.py:send_artifact():1530] sent artifact job-https___github.com_guyiyangyoung_LLM-DNABERT2.git_pretrain.py - {'id': 'QXJ0aWZhY3Q6MTM0MDMxMDIzMw==', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQ5Njk1NjM0Mw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTM0MDM0MzkxOQ==', 'versionIndex': 1}}}
+2024-11-18 21:02:37,270 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: defer
+2024-11-18 21:02:37,270 INFO    SenderThread:169234 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-11-18 21:02:37,270 INFO    SenderThread:169234 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-11-18 21:02:37,598 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-18 21:02:37,797 INFO    SenderThread:169234 [dir_watcher.py:finish():388] scan: /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files
+2024-11-18 21:02:37,797 INFO    SenderThread:169234 [dir_watcher.py:finish():402] scan save: /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files/wandb-metadata.json wandb-metadata.json
+2024-11-18 21:02:37,798 INFO    SenderThread:169234 [dir_watcher.py:finish():402] scan save: /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files/wandb-summary.json wandb-summary.json
+2024-11-18 21:02:37,798 INFO    SenderThread:169234 [dir_watcher.py:finish():402] scan save: /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files/config.yaml config.yaml
+2024-11-18 21:02:37,798 INFO    SenderThread:169234 [dir_watcher.py:finish():402] scan save: /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files/conda-environment.yaml conda-environment.yaml
+2024-11-18 21:02:37,799 INFO    SenderThread:169234 [dir_watcher.py:finish():402] scan save: /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files/output.log output.log
+2024-11-18 21:02:37,802 INFO    SenderThread:169234 [dir_watcher.py:finish():402] scan save: /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files/requirements.txt requirements.txt
+2024-11-18 21:02:37,805 INFO    SenderThread:169234 [sender.py:transition_state():614] send defer: 10
+2024-11-18 21:02:37,805 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: poll_exit
+2024-11-18 21:02:37,806 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 21:02:37,806 INFO    HandlerThread:169234 [handler.py:handle_request_defer():184] handle defer: 10
+2024-11-18 21:02:37,806 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: defer
+2024-11-18 21:02:37,807 INFO    SenderThread:169234 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-11-18 21:02:37,807 INFO    SenderThread:169234 [file_pusher.py:finish():169] shutting down file pusher
+2024-11-18 21:02:38,086 INFO    wandb-upload_1:169234 [upload_job.py:push():130] Uploaded file /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files/wandb-summary.json
+2024-11-18 21:02:38,124 INFO    wandb-upload_3:169234 [upload_job.py:push():130] Uploaded file /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files/output.log
+2024-11-18 21:02:38,129 INFO    wandb-upload_0:169234 [upload_job.py:push():130] Uploaded file /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files/config.yaml
+2024-11-18 21:02:38,130 INFO    wandb-upload_4:169234 [upload_job.py:push():130] Uploaded file /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files/requirements.txt
+2024-11-18 21:02:38,137 INFO    wandb-upload_2:169234 [upload_job.py:push():130] Uploaded file /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/files/conda-environment.yaml
+2024-11-18 21:02:38,338 INFO    Thread-11 :169234 [sender.py:transition_state():614] send defer: 11
+2024-11-18 21:02:38,338 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 21:02:38,339 INFO    HandlerThread:169234 [handler.py:handle_request_defer():184] handle defer: 11
+2024-11-18 21:02:38,339 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: defer
+2024-11-18 21:02:38,339 INFO    SenderThread:169234 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-11-18 21:02:38,339 INFO    SenderThread:169234 [file_pusher.py:join():175] waiting for file pusher
+2024-11-18 21:02:38,340 INFO    SenderThread:169234 [sender.py:transition_state():614] send defer: 12
+2024-11-18 21:02:38,340 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 21:02:38,340 INFO    HandlerThread:169234 [handler.py:handle_request_defer():184] handle defer: 12
+2024-11-18 21:02:38,340 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: defer
+2024-11-18 21:02:38,340 INFO    SenderThread:169234 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-11-18 21:02:38,340 INFO    SenderThread:169234 [file_stream.py:finish():601] file stream finish called
+2024-11-18 21:02:38,457 INFO    SenderThread:169234 [file_stream.py:finish():605] file stream finish is done
+2024-11-18 21:02:38,457 INFO    SenderThread:169234 [sender.py:transition_state():614] send defer: 13
+2024-11-18 21:02:38,457 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 21:02:38,457 INFO    HandlerThread:169234 [handler.py:handle_request_defer():184] handle defer: 13
+2024-11-18 21:02:38,458 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: defer
+2024-11-18 21:02:38,458 INFO    SenderThread:169234 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-11-18 21:02:38,458 INFO    SenderThread:169234 [sender.py:transition_state():614] send defer: 14
+2024-11-18 21:02:38,458 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: defer
+2024-11-18 21:02:38,458 INFO    HandlerThread:169234 [handler.py:handle_request_defer():184] handle defer: 14
+2024-11-18 21:02:38,458 DEBUG   SenderThread:169234 [sender.py:send():379] send: final
+2024-11-18 21:02:38,458 DEBUG   SenderThread:169234 [sender.py:send():379] send: footer
+2024-11-18 21:02:38,459 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: defer
+2024-11-18 21:02:38,459 INFO    SenderThread:169234 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-11-18 21:02:38,459 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-18 21:02:38,460 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: poll_exit
+2024-11-18 21:02:38,461 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: server_info
+2024-11-18 21:02:38,461 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-18 21:02:38,461 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: get_summary
+2024-11-18 21:02:38,461 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: sampled_history
+2024-11-18 21:02:38,461 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-18 21:02:38,462 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: server_info
+2024-11-18 21:02:38,531 DEBUG   SenderThread:169234 [sender.py:send_request():406] send_request: poll_exit
+2024-11-18 21:02:38,531 INFO    MainThread:169234 [wandb_run.py:_footer_history_summary_info():3991] rendering history
+2024-11-18 21:02:38,531 INFO    MainThread:169234 [wandb_run.py:_footer_history_summary_info():4023] rendering summary
+2024-11-18 21:02:38,531 INFO    MainThread:169234 [wandb_run.py:_footer_sync_info():3950] logging synced files
+2024-11-18 21:02:38,532 DEBUG   HandlerThread:169234 [handler.py:handle_request():158] handle_request: shutdown
+2024-11-18 21:02:38,532 INFO    HandlerThread:169234 [handler.py:finish():882] shutting down handler
+2024-11-18 21:02:39,462 INFO    WriterThread:169234 [datastore.py:close():296] close: /home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/wandb/run-20241118_210225-mjxmeqnu/run-mjxmeqnu.wandb
+2024-11-18 21:02:39,531 INFO    SenderThread:169234 [sender.py:finish():1608] shutting down sender
+2024-11-18 21:02:39,531 INFO    SenderThread:169234 [file_pusher.py:finish():169] shutting down file pusher
+2024-11-18 21:02:39,531 INFO    SenderThread:169234 [file_pusher.py:join():175] waiting for file pusher

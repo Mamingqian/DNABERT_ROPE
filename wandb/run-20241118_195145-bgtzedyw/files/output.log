@@ -1,0 +1,73 @@
+
+  0%|                                                                          | 0/500000 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "pretrain.py", line 151, in <module>
+    main()
+  File "pretrain.py", line 148, in main
+    trainer.train()
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/trainer.py", line 1948, in train
+    return inner_training_loop(
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/trainer.py", line 2289, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/trainer.py", line 3328, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/trainer.py", line 3373, in compute_loss
+    outputs = model(**inputs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/parallel/data_parallel.py", line 185, in forward
+    outputs = self.parallel_apply(replicas, inputs, module_kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/parallel/data_parallel.py", line 200, in parallel_apply
+    return parallel_apply(replicas, inputs, kwargs, self.device_ids[:len(replicas)])
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/parallel/parallel_apply.py", line 108, in parallel_apply
+    output.reraise()
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/_utils.py", line 722, in reraise
+    raise exception
+torch.cuda.OutOfMemoryError: Caught OutOfMemoryError in replica 0 on device 0.
+Original Traceback (most recent call last):
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/parallel/parallel_apply.py", line 83, in _worker
+    output = module(*input, **kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 1491, in forward
+    outputs = self.bert(
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 1141, in forward
+    encoder_outputs = self.encoder(
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 694, in forward
+    layer_outputs = layer_module(
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 626, in forward
+    layer_output = apply_chunking_to_forward(
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/pytorch_utils.py", line 239, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 639, in feed_forward_chunk
+    layer_output = self.output(intermediate_output, attention_output)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 552, in forward
+    hidden_states = self.dropout(hidden_states)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/dropout.py", line 59, in forward
+    return F.dropout(input, self.p, self.training, self.inplace)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/functional.py", line 1268, in dropout
+    return _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.50 GiB. GPU 0 has a total capacity of 79.25 GiB of which 1.28 GiB is free. Including non-PyTorch memory, this process has 77.96 GiB memory in use. Of the allocated memory 76.88 GiB is allocated by PyTorch, and 421.25 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

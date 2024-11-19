@@ -1,0 +1,22 @@
+  0%|                                                                          | 0/500000 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "pretrain.py", line 178, in <module>
+    main()
+  File "pretrain.py", line 174, in main
+    trainer.train()
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/trainer.py", line 1948, in train
+    return inner_training_loop(
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/trainer.py", line 2246, in _inner_training_loop
+    for step, inputs in enumerate(epoch_iterator):
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/accelerate/data_loader.py", line 454, in __iter__
+    current_batch = next(dataloader_iter)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 674, in _next_data
+    index = self._next_index()  # may raise StopIteration
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 621, in _next_index
+    return next(self._sampler_iter)  # may raise StopIteration
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/utils/data/sampler.py", line 287, in __iter__
+    for idx in self.sampler:
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/utils/data/sampler.py", line 111, in __iter__
+    return iter(range(len(self.data_source)))
+TypeError: object of type 'IterableDatasetFromFile' has no len()

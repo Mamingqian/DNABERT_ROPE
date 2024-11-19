@@ -1,0 +1,24 @@
+  0%|                                                                          | 0/500000 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "pretrain.py", line 152, in <module>
+    main()
+  File "pretrain.py", line 149, in main
+    trainer.train()
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/trainer.py", line 1948, in train
+    return inner_training_loop(
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/trainer.py", line 2246, in _inner_training_loop
+    for step, inputs in enumerate(epoch_iterator):
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/accelerate/data_loader.py", line 677, in __iter__
+    next_batch, next_batch_info = self._fetch_batches(main_iterator)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/accelerate/data_loader.py", line 631, in _fetch_batches
+    batches.append(next(iterator))
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 32, in fetch
+    data.append(next(self.dataset_iter))
+  File "pretrain.py", line 83, in __iter__
+    "input_ids": tokenized["input_ids"].squeeze(0),
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/tokenization_utils_base.py", line 246, in __getitem__
+    def __getitem__(self, item: Union[int, str]) -> Union[Any, EncodingFast]:
+KeyboardInterrupt

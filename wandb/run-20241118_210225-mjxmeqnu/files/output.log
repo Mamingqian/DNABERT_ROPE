@@ -1,0 +1,58 @@
+
+  0%|                                                                          | 0/500000 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "pretrain.py", line 156, in <module>
+    main()
+  File "pretrain.py", line 153, in main
+    trainer.train()
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/trainer.py", line 1948, in train
+    return inner_training_loop(
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/trainer.py", line 2289, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/trainer.py", line 3328, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/trainer.py", line 3373, in compute_loss
+    outputs = model(**inputs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/parallel/data_parallel.py", line 185, in forward
+    outputs = self.parallel_apply(replicas, inputs, module_kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/parallel/data_parallel.py", line 200, in parallel_apply
+    return parallel_apply(replicas, inputs, kwargs, self.device_ids[:len(replicas)])
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/parallel/parallel_apply.py", line 108, in parallel_apply
+    output.reraise()
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/_utils.py", line 722, in reraise
+    raise exception
+ValueError: Caught ValueError in replica 0 on device 0.
+Original Traceback (most recent call last):
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/parallel/parallel_apply.py", line 83, in _worker
+    output = module(*input, **kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/bert_layers.py", line 696, in forward
+    outputs = self.bert(
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/bert_layers.py", line 560, in forward
+    encoder_outputs = self.encoder(
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/bert_layers.py", line 427, in forward
+    hidden_states_q, hidden_states_k = self.rope(hidden_states, hidden_states)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/v-mingqianma/dnabert_pretrain/LLM-DNABERT2/bert_layers.py", line 355, in forward
+    raise ValueError(f"Sequence length ({seq_len}) exceeds max_position_embeddings ({self.max_position_embeddings}).")
+ValueError: Sequence length (768) exceeds max_position_embeddings (512).
+torch.Size([65536, 768])
+torch.Size([65536, 768])
+torch.Size([65536, 768])torch.Size([65536, 768])

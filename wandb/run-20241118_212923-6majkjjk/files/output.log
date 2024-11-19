@@ -1,0 +1,44 @@
+
+  0%|                                                                          | 0/500000 [00:00<?, ?it/s]/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+  0%|                                                             | 7/500000 [01:00<1143:52:17,  8.24s/it]Traceback (most recent call last):
+  File "pretrain.py", line 156, in <module>
+    main()
+  File "pretrain.py", line 153, in main
+    trainer.train()
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/trainer.py", line 1948, in train
+    return inner_training_loop(
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/trainer.py", line 2246, in _inner_training_loop
+    for step, inputs in enumerate(epoch_iterator):
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/accelerate/data_loader.py", line 710, in __iter__
+    next_batch, next_batch_info = self._fetch_batches(main_iterator)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/accelerate/data_loader.py", line 631, in _fetch_batches
+    batches.append(next(iterator))
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 32, in fetch
+    data.append(next(self.dataset_iter))
+  File "pretrain.py", line 77, in __iter__
+    tokenized = self.tokenizer(
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/tokenization_utils_base.py", line 3055, in __call__
+    encodings = self._call_one(text=text, text_pair=text_pair, **all_kwargs)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/tokenization_utils_base.py", line 3163, in _call_one
+    return self.encode_plus(
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/tokenization_utils_base.py", line 3228, in encode_plus
+    padding_strategy, truncation_strategy, max_length, kwargs = self._get_padding_truncation_strategies(
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/tokenization_utils_base.py", line 2958, in _get_padding_truncation_strategies
+    if padding_strategy != PaddingStrategy.DO_NOT_PAD and (self.pad_token is None or self.pad_token_id < 0):
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/tokenization_utils_base.py", line 1225, in pad_token_id
+    return self.convert_tokens_to_ids(self.pad_token)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/tokenization_utils_fast.py", line 349, in convert_tokens_to_ids
+    return self._convert_token_to_id_with_added_voc(tokens)
+  File "/home/v-mingqianma/miniconda3/envs/caduceus_env/lib/python3.8/site-packages/transformers/tokenization_utils_fast.py", line 354, in _convert_token_to_id_with_added_voc
+    index = self._tokenizer.token_to_id(token)
+KeyboardInterrupt
